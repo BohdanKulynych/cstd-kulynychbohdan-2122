@@ -1,0 +1,24 @@
+.example { background-color: rgb(255, 122, 89); }
+#custom-file-input::file-selector-button {
+	border: 2px solid #555555;
+	color: #555555;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+#demo-file::file-selector-button:hover {
+	background-color: #e9e9e9;
+}
+
+#demo-file::-webkit-file-upload-button {
+	border: 2px solid #555555;
+	color: #555555;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+#demo-file::-webkit-file-upload-button:hover {
+	background-color: #e9e9e9;
+}
