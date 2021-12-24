@@ -23,4 +23,6 @@ class MongoDB:
         return np.array(params[0]), params[1]
 
     def insert_generated_song(self, song):
+        if not isinstance(song, str):
+            raise TypeError("Song must be a string")
         return self.__generated_songs_table.insert_one({strftime('%m%d%Y%H%M%S'): song})
