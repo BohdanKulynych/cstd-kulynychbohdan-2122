@@ -33,20 +33,7 @@ def generate_text():
         filename = request.args['filename']
         track = GenerateTrack(filename)
         generated_track = track.play_song()
-        return render_template_string(f"""<head>
-                <center>We've generated this song for you.Happy listening.</center>
-              <link rel="stylesheet" href="static/play_music.css">
-              <script src="static/upload.js"></script></head>
-                <section>
-                  <img src='photo.jpg'>
-                  <header>
-                  <form action="/generate" method="POST" enctype="multipart/form-data">
-                    <div class='right'>
-                    <audio controls src = "static/audio/{generated_track}" type="audio/mpeg"></audio>
-                    </div>
-                  </form>  
-                  </header>
-                </section>""")
+        return render_template("play_song.html", generated_track=generated_track)
     return render_template('invalid_file_extension.html')
 
 

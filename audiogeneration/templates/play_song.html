@@ -1,13 +1,19 @@
-<head>
-      <link rel="stylesheet" href="static/play_music.css">
-</head>
-<section>
-  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/seated.jpg'>
-  <header>
-    <div class='right'>
-    <audio id="demo" src="http://www.rickyeckhardt.com/SaintsDay.m4a"></audio>
-    <button id='play'></button>
-    <button id='pause'></button>
-    </div>
-  </header>
-</section>
+        <html><body style="background-color:FFE4C4"></body></html>
+                <h>We've generated this song for you.Happy listening.</h>
+                    <style>
+   h{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 350%;
+   }
+  </style>
+              <link rel="stylesheet" href="static/css/play_music.css">
+                <section>
+                  <center><img src='music.png' width="500" height="250"></center>
+                  <header>
+                  <form action="/generate" method="POST" enctype="multipart/form-data">
+                    <div class='right'>
+                    <center><audio controls src = "static/audio/{{ generated_track }}" !></audio></center>
+                    </div>
+                  </form>
+                  </header>
+                </section>
