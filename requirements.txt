@@ -11,7 +11,7 @@ cloudpickle==2.0.0
 colorama==0.4.4
 cycler==0.11.0
 decorator==5.1.0
-Flask==2.0.2
+Flask==2.2.5
 flatbuffers==2.0
 fonttools==4.28.4
 gast==0.4.0
