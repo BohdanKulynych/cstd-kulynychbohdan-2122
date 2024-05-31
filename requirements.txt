@@ -77,5 +77,5 @@ Werkzeug==2.0.2
 wrapt==1.13.3
 zipp==3.6.0
 dnspython==2.1.0
-pymongo==4.0.1
+pymongo==4.6.3
 
