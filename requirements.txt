@@ -75,7 +75,7 @@ wcwidth==0.2.5
 webcolors==1.11.1
 Werkzeug==2.0.2
 wrapt==1.13.3
-zipp==3.6.0
+zipp==3.19.1
 dnspython==2.1.0
 pymongo==4.0.1
 
